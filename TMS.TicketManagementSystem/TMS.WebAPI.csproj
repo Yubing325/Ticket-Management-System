@@ -8,4 +8,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TMS.PocoData\TMS.PocoData.csproj" />
+  </ItemGroup>
+
 </Project>

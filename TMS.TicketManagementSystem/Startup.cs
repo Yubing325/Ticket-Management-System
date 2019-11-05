@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using TMS.PocoData;
+using Microsoft.EntityFrameworkCore;
 
 namespace TMS.TicketManagementSystem
 {
@@ -26,6 +28,8 @@ namespace TMS.TicketManagementSystem
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContext<TmsContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("TMSContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
