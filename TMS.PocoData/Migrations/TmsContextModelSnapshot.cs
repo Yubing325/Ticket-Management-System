@@ -83,7 +83,7 @@ namespace TMS.PocoData.Migrations
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("RoleId1")
+                    b.Property<int?>("RoleId")
                         .HasColumnType("int");
 
                     b.Property<string>("Title")
@@ -94,16 +94,16 @@ namespace TMS.PocoData.Migrations
 
                     b.HasKey("UserId");
 
-                    b.HasIndex("RoleId1");
+                    b.HasIndex("RoleId");
 
                     b.ToTable("Users");
                 });
 
             modelBuilder.Entity("TMS.PocoData.User", b =>
                 {
-                    b.HasOne("TMS.PocoData.Role", "RoleId")
-                        .WithMany()
-                        .HasForeignKey("RoleId1");
+                    b.HasOne("TMS.PocoData.Role", null)
+                        .WithMany("Users")
+                        .HasForeignKey("RoleId");
                 });
 #pragma warning restore 612, 618
         }

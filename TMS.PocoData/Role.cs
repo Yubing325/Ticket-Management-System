@@ -17,5 +17,7 @@ namespace TMS.PocoData
         public bool IsClient { get; set; }
 
         public bool IsManagement { get; set; }
+
+        public ICollection<User> Users { get; set; }
     }
 }

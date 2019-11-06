@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TMS.PocoData.Migrations
 {
-    public partial class init : Migration
+    public partial class InitialMigration_UserRoleTicket : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -50,23 +50,23 @@ namespace TMS.PocoData.Migrations
                     FirstName = table.Column<string>(nullable: true),
                     LastName = table.Column<string>(nullable: true),
                     Title = table.Column<string>(nullable: true),
-                    RoleId1 = table.Column<int>(nullable: true)
+                    RoleId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Users", x => x.UserId);
                     table.ForeignKey(
-                        name: "FK_Users_Roles_RoleId1",
-                        column: x => x.RoleId1,
+                        name: "FK_Users_Roles_RoleId",
+                        column: x => x.RoleId,
                         principalTable: "Roles",
                         principalColumn: "RoleId",
                         onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Users_RoleId1",
+                name: "IX_Users_RoleId",
                 table: "Users",
-                column: "RoleId1");
+                column: "RoleId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
