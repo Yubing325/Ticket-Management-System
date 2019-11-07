@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TMS.PocoData", "TMS.PocoDat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMS.BusinessLogic", "TMS.BusinessLogic\TMS.BusinessLogic.csproj", "{5B5BAD4C-219F-4E2D-BD44-B070D2FEAEC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMS.PresentationalModels", "TMS.PresentationalModels\TMS.PresentationalModels.csproj", "{7AFA212F-7AEE-4C2E-9FAA-42DAFD88E3F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5B5BAD4C-219F-4E2D-BD44-B070D2FEAEC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B5BAD4C-219F-4E2D-BD44-B070D2FEAEC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B5BAD4C-219F-4E2D-BD44-B070D2FEAEC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AFA212F-7AEE-4C2E-9FAA-42DAFD88E3F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AFA212F-7AEE-4C2E-9FAA-42DAFD88E3F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AFA212F-7AEE-4C2E-9FAA-42DAFD88E3F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AFA212F-7AEE-4C2E-9FAA-42DAFD88E3F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
