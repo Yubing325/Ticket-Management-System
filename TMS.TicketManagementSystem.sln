@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TMS.WebAPI", "TMS.TicketManagementSystem\TMS.WebAPI.csproj", "{26082506-BD7C-4FCD-BF9A-173CDC89F581}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMS.PocoData", "TMS.PocoData\TMS.PocoData.csproj", "{F3FE2053-F714-44C5-AD67-112929B7583F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TMS.PocoData", "TMS.PocoData\TMS.PocoData.csproj", "{F3FE2053-F714-44C5-AD67-112929B7583F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMS.BusinessLogic", "TMS.BusinessLogic\TMS.BusinessLogic.csproj", "{5B5BAD4C-219F-4E2D-BD44-B070D2FEAEC9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F3FE2053-F714-44C5-AD67-112929B7583F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3FE2053-F714-44C5-AD67-112929B7583F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3FE2053-F714-44C5-AD67-112929B7583F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B5BAD4C-219F-4E2D-BD44-B070D2FEAEC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B5BAD4C-219F-4E2D-BD44-B070D2FEAEC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B5BAD4C-219F-4E2D-BD44-B070D2FEAEC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B5BAD4C-219F-4E2D-BD44-B070D2FEAEC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
