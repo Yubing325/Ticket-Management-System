@@ -4,21 +4,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TMS.BusinessLogic.Interfaces;
+using TMS.PocoData;
 using TMS.PresentationalModels;
 
 namespace TMS.BusinessLogic
 {
     public class TicketingManager : ITicketingManager
     {
-        public TicketingManager()
-        {
+        private readonly TmsContext context;
 
+        public TicketingManager(TmsContext context)
+        {
+            this.context = context;
         }
 
         //Add a ticket
-        public void AddTicket()
+        public void AddTicket(TicketModel model)
         {
-            throw new NotImplementedException();
+            var ticket = new Ticket
+            {
+                Title = model.TicketTitle,
+                Description = model.TicketDescription,
+                CreatedTime = DateTime.Now
+            };
+
+            context.Add<Ticket>(ticket);
+            context.SaveChanges();
+
         }
         //Soft delete a ticket
         public void DeleteTicket(int ticketId)
@@ -41,14 +53,5 @@ namespace TMS.BusinessLogic
             throw new NotImplementedException();
         }
 
-        
-
-        
-
-        
-
-        
-
-        
     }
 }

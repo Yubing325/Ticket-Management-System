@@ -12,6 +12,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using TMS.PocoData;
 using Microsoft.EntityFrameworkCore;
+using TMS.BusinessLogic.Interfaces;
+using TMS.BusinessLogic;
 
 namespace TMS.TicketManagementSystem
 {
@@ -30,6 +32,7 @@ namespace TMS.TicketManagementSystem
             services.AddControllers();
             services.AddDbContext<TmsContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("TMSContext")));
+            services.AddScoped<ITicketingManager, TicketingManager>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

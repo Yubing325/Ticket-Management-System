@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TMS.PocoData\TMS.PocoData.csproj" />
     <ProjectReference Include="..\TMS.PresentationalModels\TMS.PresentationalModels.csproj" />
   </ItemGroup>
 

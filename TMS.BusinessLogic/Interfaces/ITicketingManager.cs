@@ -8,7 +8,7 @@ namespace TMS.BusinessLogic.Interfaces
     public interface ITicketingManager
     {
         //Add a ticket
-        void AddTicket();
+        void AddTicket(TicketModel model);
 
         //Retrieve All Tickets
         ICollection<TicketModel> GetAllTickets();
